@@ -1,3 +1,6 @@
+using F5Education.Web.Services;
+using Microsoft.AspNetCore.Hosting;
+
 namespace F5Education.Web
 {
     public class Program
@@ -8,6 +11,8 @@ namespace F5Education.Web
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
+            builder.Services.AddTransient<JsonFileCoursesService>();
 
             var app = builder.Build();
 
