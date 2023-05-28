@@ -1,18 +1,127 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --purple: rgba(185,97,252,1);
+    --purple-light: rgba(185,97,252,0.8);
+    --gray: rgba(0,0,0,0.05);
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.menu-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+    .menu-link:hover {
+        color: var(--purple);
+    }
+
+.layout__search_input {
+    background-color: rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.8);
+    outline: none;
+    font-weight: 600;
+    width: 100%;
+}
+
+    .layout__search_input::placeholder {
+        color: rgba(0,0,0,0.4);
+    }
+
+.layout__menu_assinar_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout__menu_assinar {
+    background-color: var(--purple-light);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+    .layout__menu_assinar:hover {
+        background-color: var(--purple);
+        color: #fff;
+    }
+
+.layout__menu_account {
+    background-color: var(--gray);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100%;
+}
+
+.section__hero {
+    background: rgb(188,27,255);
+    background: linear-gradient(90deg, rgba(188,27,255,1) 0%, rgba(185,97,252,1) 31%, rgba(118,0,255,1) 100%);
+    padding: 5px;
+    position: relative;
+    user-select: none;
+    color: #fff;
+    padding: 120px 0;
+}
+
+@media (max-width: 768px) {
+    .section__hero div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        }
+}
+
+.home__hero_gta a {
+    font-size: 0.8rem;
+    color: #1f1f1f;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #1f1f1f;
+    border: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+    .home__hero_gta a:hover {
+        box-shadow: 0 0 22px 0 rgba(0,0,0,0.2);
+    }

@@ -1,12 +1,34 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Início";
 }
 
-<div class="text-start">
-    <h1 class="">F5 Education</h1>
-    <p>
-        Soluções incríveis para educação, aulas ao vivo e gravadas, com interação entre alunos e professores.
-    </p>
-</div>
+<main class="home__main">
+    <section class="section__hero">
+        <div class="container">
+            <h1 class="">F5 Education</h1>
+            <p>
+                Soluções incríveis para educação, aulas ao vivo e gravadas, com interação entre alunos e professores.
+            </p>
+
+            <div class="home__hero_gta">
+                <a href="/Courses">Conheça nossos cursos</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section__courses">
+        <div class="container">
+
+            @foreach (var item in Model.Courses)
+            {
+                <div>
+                    <h2>@item.Title</h2>
+                    <p>@item.Description</p>
+                </div>
+            }
+        </div>
+    </section>
+</main>

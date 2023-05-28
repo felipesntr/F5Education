@@ -1,9 +1,9 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Anatomia e Fisiologia Humana",
-    "descriptions": "A anatomia humana estuda a forma e a estrutura do corpo humano. � uma ci�ncia intimamente relacionada com a fisiologia, uma vez que, para compreender a ...",
+    "description": "A anatomia humana estuda a forma e a estrutura do corpo humano. É uma ciência intimamente relacionada com a fisiologia, uma vez que, para compreender a ...",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hist.Technik_%282%29.jpg/220px-Hist.Technik_%282%29.jpg",
-    "school_name": "Escola Estadual de Ensino M�dio Professora Maria Jos�",
+    "school_name": "Escola Estadual de Ensino M�dio Professora Maria Jos�"
   }
 ]
