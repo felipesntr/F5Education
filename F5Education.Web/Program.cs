@@ -1,5 +1,7 @@
 using F5Education.Web.Services;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using System.Text.Json;
 
 namespace F5Education.Web
 {
@@ -11,7 +13,7 @@ namespace F5Education.Web
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-
+            builder.Services.AddControllers();
             builder.Services.AddTransient<JsonFileCoursesService>();
 
             var app = builder.Build();
@@ -26,12 +28,18 @@ namespace F5Education.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
+            app.MapControllers();
             app.MapRazorPages();
+
+            //app.MapGet("/courses", (context) =>
+            //{
+            //    var _courses = app.Services.GetService<JsonFileCoursesService>().GetCourses();
+            //    var json = JsonSerializer.Serialize(_courses);
+            //    return context.Response.WriteAsync(json);
+            //});
 
             app.Run();
         }
