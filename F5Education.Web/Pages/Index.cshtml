@@ -7,28 +7,84 @@
 <main class="home__main">
     <section class="section__hero">
         <div class="container">
-            <h1 class="">F5 Education</h1>
-            <p>
-                Soluções incríveis para educação, aulas ao vivo e gravadas, com interação entre alunos e professores.
-            </p>
 
-            <div class="home__hero_gta">
-                <a href="/Courses">Conheça nossos cursos</a>
+            <div class="w-100 d-flex align-items-center justify-content-between gap-4">
+                <div>
+                    <h1 class=""><b>F5 Education</b></h1>
+                    <p class="d-flex flex-column w-50">
+                        Soluções incríveis para educação, aulas ao vivo e gravadas, com interação entre alunos e professores.
+                    </p>
+                    <div class="home__hero_gta">
+                        <a href="/Courses">Conheça nossos cursos</a>
+                    </div>
+                </div>
+
+                <!--<image 
+                   
+                    width="300" 
+                    src="" 
+                />-->
             </div>
+
+
+
+
+
         </div>
     </section>
 
 
     <section class="section__courses">
         <div class="container">
+            <p class="section__courses_pretitle">
+                FÍSICA MÉDICA, BIOLOGIA, BIOQUÍMICA E ETC...
 
-            @foreach (var item in Model.Courses)
-            {
-                <div>
-                    <h2>@item.Title</h2>
-                    <p>@item.Description</p>
+
+            </p>
+            <p class="text-center">
+                <b>
+                    Cursos online <br />
+                </b>
+                Aprenda com os melhores professores
+            </p>
+            <br />
+
+            <div class="section__courses_container">
+                <div class="section__courses_group">
+                    <h3 class="section__courses_group_title">Novos</h3>
+
+                    @foreach (var item in Model.Courses)
+                    {
+                        <div class="section__courses_item">
+                            <image class="section__courses_item_image" src="@item.Image" />
+                            <div>
+                                <h4><b>@item.Title</b></h4>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    }
                 </div>
-            }
+
+                <div class="section__courses_group">
+                    <h3 class="section__courses_group_title">Populares</h3>
+                    @foreach (var item in Model.Courses)
+                    {
+                        <div class="section__courses_item">
+                            <image class="section__courses_item_image" src="@item.Image" />
+                            <div>
+                                <h4><b>@item.Title</b></h4>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="section__courses_more_courses">
+                <a asp-action="/Courses">
+                    Mais cursos
+                </a>
+            </div>
         </div>
     </section>
 </main>

@@ -5,5 +5,19 @@
     "description": "A anatomia humana estuda a forma e a estrutura do corpo humano. É uma ciência intimamente relacionada com a fisiologia, uma vez que, para compreender a ...",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hist.Technik_%282%29.jpg/220px-Hist.Technik_%282%29.jpg",
     "school_name": "Escola Estadual de Ensino M�dio Professora Maria Jos�"
+  },
+  {
+    "id": "2",
+    "title": "Biologia Celular",
+    "description": "A biologia celular (antigamente citologia, de citos, célula e logos, estudo) é uma disciplina acadêmica que se dedica a estudar as células e suas estruturas.",
+    "image": "https://wordpress-cms-gc-prod-assets.quero.space/uploads/2015/08/biologia_600-1.jpg",
+    "school_name": "Escola Estadual de Ensino M�dio Professora Maria Jos�"
+  },
+  {
+    "id": "3",
+    "title": "Biologia Molecular",
+    "description": "A biologia molecular é a área da biologia que diz respeito à base molecular da atividade biológica entre biomoléculas nos vários sistemas de uma célula, incluindo as interações entre DNA, RNA, proteínas e sua biossíntese, bem como a regulação dessas interações.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hist.Technik_%282%29.jpg/220px-Hist.Technik_%282%29.jpg"
+
   }
 ]

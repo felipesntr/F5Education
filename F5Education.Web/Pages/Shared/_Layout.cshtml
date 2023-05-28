@@ -33,21 +33,26 @@
 
                         <li class="layout__menu_assinar_login">
                             <a class="layout__menu_assinar" asp-area="" asp-page="/Contact">Assinar</a>
-
                         </li>
                     </ul>
                 </div>
-
-
             </div>
         </nav>
     </header>
 
     @RenderBody()
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - F5Education.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="border-top footer text-muted bg-dark mt-5">
+        <div class="container d-flex align-items-center justify-content-center gap-4 pt-4">
+            <a href="#" class="text-white-50">Fale conosco</a>
+            <a href="#" class="text-white-50">Carreiras</a>
+        </div>
+        <hr />
+        <div class="container d-flex align-items-center justify-content-center gap-4">
+            <image src="/images/logo.svg"
+                   width="30"
+                   class="mr-4" />
+            F5 Education
         </div>
     </footer>
 
